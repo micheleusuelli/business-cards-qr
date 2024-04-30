@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QR Code Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        button[type="submit"] {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate QR Code</h1>
+        <form action="/generate" method="POST">
+            <label for="FN">Name</label>
+            <input type="text" id="FN" name="FN" placeholder="Name">
+
+            <label for="ADR">Home Address</label>
+            <input type="text" id="ADR" name="ADR" placeholder="Home address">
+
+            <label for="TEL">Telephone Number</label>
+            <input type="text" id="TEL" name="TEL" placeholder="Telephone number">
+
+            <label for="EMAIL">Personal Email Address</label>
+            <input type="text" id="EMAIL" name="EMAIL" placeholder="Personal Email Address">
+
+            <label for="EMAIL_WORK">Work Email Address</label>
+            <input type="text" id="EMAIL_WORK" name="EMAIL_WORK" placeholder="Work Email Address">
+
+            <label for="ORG">Company</label>
+            <input type="text" id="ORG" name="ORG" placeholder="Company">
+
+            <label for="TITLE">Job Title</label>
+            <input type="text" id="TITLE" name="TITLE" placeholder="Job Title">
+
+            <label for="URL">Website</label>
+            <input type="text" id="URL" name="URL" placeholder="Website">
+
+            <label for="URL_LINKEDIN">LinkedIn</label>
+            <input type="text" id="URL_LINKEDIN" name="URL_LINKEDIN" placeholder="LinkedIn">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
